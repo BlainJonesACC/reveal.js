@@ -170,13 +170,13 @@
 
 ## The First Programming Languages (1950-1965)
 
-The first assembly languages had operations like ADD and OUTPUT
-Programmers entered mnemonic codes for operations at keypunch machine
-Card reader—translated holes in cards to patterns in computer’s memory
-Assembler—translated application programs in memory to machine code
-Compiler – translated programs to machine code
-High-level programming languages: FORTRAN, LISP, COBOL
-common feature: abstraction
+* The first assembly languages had operations like ADD and OUTPUT
+* Programmers entered mnemonic codes for operations at keypunch machine
+* Card reader—translated holes in cards to patterns in computer’s memory
+* Assembler—translated application programs in memory to machine code
+* Compiler – translated programs to machine code
+* High-level programming languages: FORTRAN, LISP, COBOL
+* common feature: abstraction
 
 ---
 
@@ -299,7 +299,7 @@ Hi there
 
 * The following example receives an input string from the user and saves it for further processing:
 
-```
+```text
 >>> name = input(“Enter your name:”)
 Enter your name: Ken Lambert
 >>> name
@@ -313,21 +313,24 @@ Ken Lambert
 
 ## Input, Processing, and Output (3 of 5)
 
-The input function always builds a string from the user’s keystrokes and returns it to the program
-Strings that represent numbers must be converted from strings to appropriate number types
-Two type conversion functions: int (for integers) and float (for floating-point numbers)
+* The input function always builds a string from the user’s keystrokes and returns it to the program
+* Strings that represent numbers must be converted from strings to appropriate number types
+* Two type conversion functions: int (for integers) and float (for floating-point numbers)
 
 ---
 
 ## Input, Processing, and Output (4 of 5)
 
-The next session inputs two integers and displays their sum:
+* The next session inputs two integers and displays their sum:
+
+```text
 >>> first = int(input(“Enter the first number: ”))
 Enter the first number: 23
 >>> second = int(input(“Enter the second number:”))
 Enter the second number: 44
 >>> print(“The sum is”, first + second)
 The sum is 67
+```
 
 ---
 
@@ -337,10 +340,10 @@ The sum is 67
 
 ## Editing, Saving, and Running a Script (1 of 3)
 
-We can then run Python program files or scripts within I D L E or from the O S’s command prompt
-Run within I D L E using menu option, F5 (Windows), or Control+F5 (Mac or Linux)
-Python program files use .py extension
-Running a script from IDLE allows you to construct some complex programs, test them, and save them in program libraries to reuse or share with others
+* We can then run Python program files or scripts within I D L E or from the O S’s command prompt
+* Run within I D L E using menu option, F5 (Windows), or Control+F5 (Mac or Linux)
+* Python program files use .py extension
+* Running a script from IDLE allows you to construct some complex programs, test them, and save them in program libraries to reuse or share with others
 
 ---
 
@@ -356,56 +359,60 @@ Behind the Scenes: How Python Works
 
 ## Detecting and Correcting Syntax Errors (1 of 2)
 
-Programmers inevitably make typographical errors when editing programs, called syntax errors
-The Python interpreter will usually detect these
-Syntax: rules for forming sentences in a language
-When Python encounters a syntax error in a program, it halts execution with an error message
-Example:
+* Programmers inevitably make typographical errors when editing programs, called syntax errors
+* The Python interpreter will usually detect these
+* Syntax: rules for forming sentences in a language
+* When Python encounters a syntax error in a program, it halts execution with an error message
+* Example:
+```text
 >>> length = int(input(“Enter the length: ”))
 Enter the length: 44
 >>> print(lenth)
 Traceback (most recent call last):
 File “<py shell#l>”, line 1, in <module>
 NameError: name ‘lenth’ is not defined
-
+```
 ---
 
 ## Detecting and Correcting Syntax Errors (2 of 2)
 
-The next statement attempts to print the value of the correctly spelled variable:
+* The next statement attempts to print the value of the correctly spelled variable:
+
+```text
 >>> print(length)
 SyntaxError: unexpected indent
 Final example, programmer attempts to add two numbers, but forgets to include the second one:
 >>> 3 +
 SyntaxError: invalid syntax
+```
 
 ---
 
 ## Chapter Summary (1 of 3)
 
-Fundamental ideas of computer science
-The algorithm
-Information processing
-Real computing agents can be constructed out of hardware devices
-C P U, memory, and input and output devices
-Some real computers are specialized for a small set of tasks, whereas a desktop or laptop computer is a general-purpose problem-solving machine
-Software provides the means whereby different algorithms can be run on a general-purpose hardware device
-Written in programming languages
+* Fundamental ideas of computer science
+* The algorithm
+* Information processing
+* Real computing agents can be constructed out of hardware devices
+* C P U, memory, and input and output devices
+* Some real computers are specialized for a small set of tasks, whereas a desktop or laptop computer is a general-purpose problem-solving machine
+* Software provides the means whereby different algorithms can be run on a general-purpose hardware device
+* Written in programming languages
 
 ---
 
 ## Chapter Summary (2 of 3)
 
-Languages such as Python are high-level
-Interpreter translates a Python program to a lower-level form that can be executed on a real computer
-Python shell provides a command prompt for evaluating and viewing the results of Python expressions and statements
-I D L E is an integrated development environment that allows the programmer to save programs in files and load them into a shell for testing
-Python scripts are programs that are saved in files and run from a terminal command prompt
+* Languages such as Python are high-level
+* Interpreter translates a Python program to a lower-level form that can be executed on a real computer
+* Python shell provides a command prompt for evaluating and viewing the results of Python expressions and statements
+* I D L E is an integrated development environment that allows the programmer to save programs in files and load them into a shell for testing
+* Python scripts are programs that are saved in files and run from a terminal command prompt
 
 ---
 
 ## Chapter Summary (3 of 3)
 
-When a Python program is executed, it is translated into byte code
-Sent to P V M for further interpretation and execution
-Syntax: set of rules for forming correct expressions and statements in a programming language
+* When a Python program is executed, it is translated into byte code
+* Sent to P V M for further interpretation and execution
+* Syntax: set of rules for forming correct expressions and statements in a programming language
