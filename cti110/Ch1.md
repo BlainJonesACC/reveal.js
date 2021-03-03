@@ -1,12 +1,3 @@
----
-marp: true
-theme: default
-class: 
-    - lead
-    # - invert
-# @auto-scaling true
-# size: 4:3
----
 # Chapter 1
 
 ## Introduction
