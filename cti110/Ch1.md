@@ -281,10 +281,17 @@ common feature: abstraction
 * In Python, inputs are Python expressions or statements
 * Outputs are the results displayed in the shell
 * Programmers can also force output of a value by using the print function
+
+```python
 print (<expression>)
-Example:
+```
+
+* Example:
+
+```text
 >>>print (“Hi there”)
 Hi there
+```
 
 ---
 
