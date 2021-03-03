@@ -83,12 +83,12 @@
 * '' and "" represent the empty string
 * Double-quoted strings are handy for composing strings that contain single quotation marks or apostrophes:
 
-    ```text
-    >>>  “I’m using a single quote in this string!”
-    “I’m using a single quote in this string!”
-    >>>  print(“I’m using a single quote in this string!”)
-    I’m using a single quote in this string!
-    ```
+```text
+>>>  “I’m using a single quote in this string!”
+“I’m using a single quote in this string!”
+>>>  print(“I’m using a single quote in this string!”)
+I’m using a single quote in this string!
+```
 
 ---
 
@@ -96,20 +96,20 @@
 
 * Use ‘‘‘ and ”””for multi-line paragraphs
 
-    ```text
-    >>>  print(“””This very long sentence extends
-    all the way to the next line.”””)
-    This very long sentence extends all the way to the next line
-    ```
+```text
+>>>  print(“””This very long sentence extends
+all the way to the next line.”””)
+This very long sentence extends all the way to the next line
+```
 
 * When you evaluate a string in Python without the print function
   * You can see the literal for the newline character, \n embedded in the result:
   
-    ```text
-    >>> “””This very long sentence extends
-    all the way to the next line.”””
-    ‘This very long sentence extends\nall the way to the next line.’
-    ```
+```text
+>>> “””This very long sentence extends
+all the way to the next line.”””
+‘This very long sentence extends\nall the way to the next line.’
+```
 
 ---
 
@@ -123,17 +123,17 @@
 
 * You can join two or more strings to form a new string using the concatenation operator **+**
 
-    ```text
-    >>> “Hi “ + “there,” + “Ken!”
-    ‘Hi there, Ken!
-    ```
+```text
+>>> “Hi “ + “there,” + “Ken!”
+‘Hi there, Ken!
+```
 
 * The **\*** operator allows you to build a string by repeating another string a given number of times
 
-    ```text
-    >>> “ “ * 10 + “Python”
-    ‘          Python’
-    ```
+```text
+>>> “ “ * 10 + “Python”
+‘          Python’
+```
 
 ---
 
@@ -158,21 +158,21 @@
   * Examples: **TAX_RATE** and **STANDARD_DEDUCTION**
 * Variables receive initial values and can be reset to new values with an **assignment statement**
 
-    ```python
-    <variable name> = <expression>
-    ```
+```python
+<variable name> = <expression>
+```
 
 --
 
 * Subsequent uses of the variable name in expressions are known as variable references
 
-    ```text
-    >>> firstName = “Ken”
-    >>> secondName = “Lambert”
-    >>> fullName = firstName + “ ” + secondName
-    >>> fullName
-    ‘Ken Lambert’
-    ```
+```text
+>>> firstName = “Ken”
+>>> secondName = “Lambert”
+>>> fullName = firstName + “ ” + secondName
+>>> fullName
+‘Ken Lambert’
+```
 
 ---
 
@@ -215,9 +215,9 @@ number labeled as the area of the circle.
   * Might explain the purpose of a variable or the strategy used by a piece of code
   * Example:
 
-    ```python
-    RATE = 0.85 # Conversion rate for Canadian to US dollars
-    ```
+```python
+RATE = 0.85 # Conversion rate for Canadian to US dollars
+```
 
 ---
 
@@ -273,16 +273,16 @@ number labeled as the area of the circle.
 * ASCII character set maps to a set of integers
 * **ord** and **chr** functions convert characters to and from ASCII
 
-    ```text
-    >>> ord(‘a’)
-    97
-    >>> ord(‘A’)
-    65
-    >>> chr(65)
-    ‘A’
-    >>> chr(66)
-    ‘B’
-    ```
+```text
+>>> ord(‘a’)
+97
+>>> ord(‘A’)
+65
+>>> chr(65)
+‘A’
+>>> chr(66)
+‘B’
+```
 
 ---
 
@@ -324,11 +324,11 @@ number labeled as the area of the circle.
 * For multi-line expressions, use a \
 * Example:
 
-    ```text
-    >>> 3 + 4 * \
-    2 ** 5
-    131
-    ```
+```text
+>>> 3 + 4 * \
+2 ** 5
+131
+```
 
 ---
 
@@ -336,10 +336,10 @@ number labeled as the area of the circle.
 
 * Mixed-mode arithmetic involves integers and floating-point numbers:
 
-    ```text
-    >>> 3.14 * 3 ** 2
-    28.26
-    ```
+```text
+>>> 3.14 * 3 ** 2
+28.26
+```
 
   * You must use a type conversion function when working with input of numbers
   * It is a function with the same name as the data type to which it converts
@@ -356,12 +356,12 @@ number labeled as the area of the circle.
 
 * Note that the int function converts a float to an int by truncation, not by rounding
 
-    ```text
-    >>> int(6.75)
-    6
-    >>> round(6.75)
-    7
-    ```
+```text
+>>> int(6.75)
+6
+>>> round(6.75)
+7
+```
 
 ---
 
@@ -369,21 +369,21 @@ number labeled as the area of the circle.
 
 * Type conversion also occurs in the construction of strings from numbers and other strings
 
-    ```text
-    >>> profit = 1000.55
-    >>> print(‘$’ + profit)
+```text
+>>> profit = 1000.55
+>>> print(‘$’ + profit)
 
-    Traceback (most recent call last):
-    File “<stdin>”, line 1, in <module>
-    TypeError: cannot concatenate ‘str’ and ‘float’ objects
-    ```
+Traceback (most recent call last):
+File “<stdin>”, line 1, in <module>
+TypeError: cannot concatenate ‘str’ and ‘float’ objects
+```
 
 * Solution: use str function
 
-    ```text
-    >>> print(‘$’ + str(profit))
-    $1000.55
-    ```
+```text
+>>> print(‘$’ + str(profit))
+$1000.55
+```
 
 * Python is a strongly typed programming language
 
@@ -403,15 +403,15 @@ number labeled as the area of the circle.
 * When function completes its task, it may return a value back to the part of the program that called it
 * To learn how to use a function’s arguments, use the help function:
 
-    ```text
-    >>> help(round)
-    Help on built-in function round in module builtin:
-    round(…)
-    round(number[, n digits]) -> floating point number
-    Round a number to a given precision in decimal digits (default 0 digits).
-    This returns an int when called with one argument, otherwise the same type as
-    number, n digits may be negative.
-    ```
+```text
+>>> help(round)
+Help on built-in function round in module builtin:
+round(…)
+round(number[, n digits]) -> floating point number
+Round a number to a given precision in decimal digits (default 0 digits).
+This returns an int when called with one argument, otherwise the same type as
+number, n digits may be negative.
+```
 
 ---
 
@@ -423,12 +423,12 @@ number labeled as the area of the circle.
 * To use a resource from a module, you write the name of a module as a qualifier, followed by a dot (.) and the name of the resource
   * Example: **math.pi**
 
-    ```text
-    >>> math.pi
-    3.1415926535897931
-    Math.sqrt(2)
-    1.4142135623730951
-    ```
+```text
+>>> math.pi
+3.1415926535897931
+Math.sqrt(2)
+1.4142135623730951
+```
 
 ---
 
@@ -436,18 +436,18 @@ number labeled as the area of the circle.
 
 * You can avoid the use of the qualifier with each reference by importing the individual resources
 
-    ```text
-    >>> from math import pi, sqrt
-    >>>print(pi, sqrt(2))
-    3.14159265359 1.41421356237
-    ```
+```text
+>>> from math import pi, sqrt
+>>>print(pi, sqrt(2))
+3.14159265359 1.41421356237
+```
 
 * You may import all of a module’s resources to use without the qualifier
   * Example:
 
-    ```python
-    from math import *
-    ```
+```python
+from math import *
+```
 
 ---
 
@@ -457,12 +457,12 @@ number labeled as the area of the circle.
 * To differentiate this script from the other modules in a program, we call it the main module
   * Like any module, the main module can be imported
   
-    ```text
-    >>> import taxform
-    Enter the gross income: 120000
-    Enter the number of dependents: 2
-    The income tax is $20800.0
-    ```
+```text
+>>> import taxform
+Enter the gross income: 120000
+Enter the number of dependents: 2
+The income tax is $20800.0
+```
 
 * After importing a main module, view its documentation by running the help function
 
